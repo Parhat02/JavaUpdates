@@ -37,43 +37,7 @@ public class FunctionalInterface {
         Supplier<Double> randomValue = () -> Math.random();
         System.out.println(randomValue.get());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Supplier<String> str = () -> "Hello World";
+        System.out.println(str.get());
     }
 }
