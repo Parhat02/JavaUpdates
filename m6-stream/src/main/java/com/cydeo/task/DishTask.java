@@ -1,6 +1,7 @@
 package com.cydeo.task;
 
 import java.util.Comparator;
+import java.util.Optional;
 
 public class DishTask {
 
@@ -35,6 +36,16 @@ public class DishTask {
                 .sorted(Comparator.comparing(Dish::getCalories).reversed())
                 .map(Dish::getName)
                 .forEach(System.out::println);
+
+
+        // count the number of dishes in a stream using map and reduce methods
+        Long count = DishData.getAll().stream().map(Dish::getName).count();
+        System.out.println(count);
+
+        Integer total = DishData.getAll().stream()
+                .map(Dish::getCalories)
+                .reduce(0,(a,b)-> a+b);
+        System.out.println(total);
 
     }
 }
