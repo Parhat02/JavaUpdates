@@ -1,6 +1,7 @@
 package com.cydeo;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -40,6 +41,8 @@ public class StreamOperations {
                 .map(number -> number*2)
                 .filter(i -> i%3==0)
                 .forEach(System.out::println);
+
+        System.out.println(list.stream().sorted(Comparator.reverseOrder()).distinct().skip(1).findFirst());
 
     }
 }

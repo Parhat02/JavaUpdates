@@ -24,6 +24,7 @@ public class Task {
                         map(j -> new int[] {i, j}))
                 .forEach(p -> System.out.println(Arrays.toString(p)));
 
+
     }
 
 }
