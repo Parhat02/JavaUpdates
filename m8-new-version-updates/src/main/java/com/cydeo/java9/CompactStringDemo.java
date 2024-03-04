@@ -8,8 +8,8 @@ public class CompactStringDemo {
 
         String abc = "cydeo";
 
-        Test test = new Test();
+        TestPrivateInterface testPrivateInterface = new TestPrivateInterface();
         LocalDate date1 = LocalDate.of(2003,1,1);
-        System.out.println(test.nextDay(date1));
+        System.out.println(testPrivateInterface.nextDay(date1));
     }
 }

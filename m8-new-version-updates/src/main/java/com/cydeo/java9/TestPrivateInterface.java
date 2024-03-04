@@ -2,7 +2,7 @@ package com.cydeo.java9;
 
 import java.time.LocalDate;
 
-public class Test implements PrivateMethodInterface{
+public class TestPrivateInterface implements PrivateMethodInterface{
 
 
     @Override
