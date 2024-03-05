@@ -36,9 +36,10 @@ public class BigDecimalDemo {
 
 
         //Do not use equals(). Use compareTo()
-        System.out.println(new BigDecimal("2").compareTo(new BigDecimal("2")));
-        System.out.println(new BigDecimal("3").compareTo(new BigDecimal("2")));
-        System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));
+        System.out.println(new BigDecimal("2").compareTo(new BigDecimal("2")));  //returns 0
+        System.out.println(new BigDecimal("3").compareTo(new BigDecimal("2")));  //returns 1
+        System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));  //returns -1
+        
 
     }
 
